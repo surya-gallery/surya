@@ -1,14 +1,15 @@
 # Surya's Everest-Inspired Gallery
 
-A minimal, elegant, and culturally infused photo gallery inspired by Himalayan adventures.
+This is a personal web gallery showcasing stunning photos of Everest and surrounding mountains. Built with HTML, CSS, and a touch of JavaScript.
 
 ## Features
-- Animated hero section with background cycling
-- Responsive image gallery grid
-- Multilingual poetic introduction
-- Clean and modern styling
 
-## Deployment
-Just open `index.html` in a browser or deploy to GitHub Pages.
+- Full-screen animated background slideshow in the header
+- Responsive grid photo gallery
+- Elegant styling and typography
+- Multi-language elements (Malayalam, Tamil)
 
-© 2025 Surya
+## Usage
+
+1. Clone this repository or download the files.
+2. Open `index.html` in your web browser.
