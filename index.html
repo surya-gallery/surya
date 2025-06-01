@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Surya's Everest-Inspired Gallery</title>
+  <style>
+    /* Reset & base */
+    * {
+      box-sizing: border-box;
+    }
+    body, html {
+      margin: 0; padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #e0f0ff, #a0c8ff);
+      color: #003366;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    @keyframes slideBackground {
+      0%   { background-image: url('https://i.ibb.co/gLzXwtMz/IMG-20250531-WA0021.jpg'); }
+      33%  { background-image: url('https://i.ibb.co/7xLJff5L/IMG-20250531-WA0022.jpg'); }
+      66%  { background-image: url('https://i.ibb.co/0VDdRNTr/IMG-20250531-WA0023.jpg'); }
+      100% { background-image: url('https://i.ibb.co/gLzXwtMz/IMG-20250531-WA0021.jpg'); }
+    }
+
+    header {
+      height: 100vh;
+      animation: slideBackground 15s infinite ease-in-out;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      color: white;
+      text-shadow: 0 3px 10px rgba(0,0,0,0.7);
+      padding: 0 2rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 5rem;
+      margin-bottom: 0.2em;
+      font-weight: 900;
+      letter-spacing: 0.15em;
+    }
+    header p {
+      font-size: 1.5rem;
+      font-style: italic;
+      opacity: 0.85;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: auto;
+      padding: 4rem 2rem;
+    }
+
+    section.about {
+      background: rgba(255 255 255 / 0.9);
+      border-radius: 12px;
+      padding: 3rem 2rem;
+      margin-bottom: 4rem;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+      font-size: 1.3rem;
+      line-height: 1.6;
+      color: #004080;
+    }
+    section.about h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+
+    section.gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    section.gallery img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    section.gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+      z-index: 10;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 1rem;
+      color: #004080;
+      background: #dbeeff;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+    }
+    footer a {
+      color: #003366;
+      text-decoration: none;
+      font-weight: 700;
+      border-bottom: 2px solid transparent;
+      transition: border-bottom 0.3s ease;
+    }
+    footer a:hover {
+      border-bottom: 2px solid #003366;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 3rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      section.about {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Surya</h1>
+    <p>Wanderlust-driven explorer capturing moments from around the world.</p>
+  </header>
+  <main>
+    <section class="about">
+      <h2>ആത്മാവ്</h2>
+      <p>தெரியாதவற்றில்  கண்டுபிடிக்க எல்லங்களைத் தாண்டி பயணம் செய்தல்.</p>
+    </section>
+    <section class="gallery">
+      <img src="https://i.ibb.co/gLzXwtMz/IMG-20250531-WA0021.jpg" alt="Mountain photo 1" />
+      <img src="https://i.ibb.co/7xLJff5L/IMG-20250531-WA0022.jpg" alt="Mountain photo 2" />
+      <img src="https://i.ibb.co/0VDdRNTr/IMG-20250531-WA0023.jpg" alt="Mountain photo 3" />
+      <img src="https://i.ibb.co/WNnDVs5L/IMG-20250531-WA0024.jpg" alt="Mountain photo 4" />
+      <img src="https://i.ibb.co/hxXF4vJ6/IMG-20250531-WA0025.jpg" alt="Mountain photo 5" />
+      <img src="https://i.ibb.co/zhq7J5jX/IMG-20250531-WA0026.jpg" alt="Mountain photo 6" />
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 Surya's Everest-Inspired Gallery</p>
+  </footer>
+</body>
+</html>
